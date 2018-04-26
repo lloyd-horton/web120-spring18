@@ -1,0 +1,187 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+    background-color:lightgray;
+}
+
+
+div.wrapper {
+    background-color:transparent;
+    overflow:auto;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #ccc;
+	clear:both;
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   div.wrapper {
+       	margin:auto;
+	}
+
+    section { 
+		width:60%;
+		float:left;
+	}
+	
+  
+     aside.desktop {	
+		width:39%;
+		float:right;
+	}
+			
+	
+    img.desktop {
+      		
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle ;
+   	 }
+    
+    img.tablet  {
+       		 display:none;
+    	}  
+    img.phone {
+        display: none;
+    }
+    img.pipe {
+        display: none;
+    }
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        	color:#000;
+   	 }
+    
+
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+    div.wrapper {
+       	margin:auto;
+	}
+    
+    section {
+		width:60%;
+		float:left;
+	}
+	
+	aside.desktop {	
+        width:39%;
+		float:right;
+	}
+	
+            img.tablet {
+                width:20%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle ;
+    }
+    
+           img.phone {
+        		display:none;
+           } 
+        
+           img.desktop {
+        		display:none;
+           } 
+            
+           img.pipe {
+               display: none;
+            }
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+          }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+   img.pipe {
+       		width:20%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle ;
+    }
+  
+    
+    img.phone {
+       		width:20%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle ;
+    }
+    
+    aside.tablet, aside.desktop {
+        display: none;
+    }
+    
+    img.desktop {
+        		display:none;
+    }  
+    
+    img.tablet {
+        		display:none;
+    }  
+    
+    h1.resp_header {
+       font-size: 120%;
+    }
+
+}
